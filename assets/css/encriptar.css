@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'FuentePixel';
+    src: url('../fonts/fuentePixel.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FuenteMaquina';
+    src: url('../fonts/fuenteMaquina.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+
+header {
+    background-color: rgb(215, 228, 246);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: rgb(1, 217, 190);
+    text-shadow: 4px 5px 0 rgb(12, 35, 80);
+    font-size: 40px;
+    margin: 0;
+    font-family: 'FuentePixel', sans-serif; 
+}
+
+.container {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 600px; 
+    height: 400px; 
+    margin: 20px auto; 
+    background: rgba(148, 243, 255, 0.9); 
+    box-shadow: 0 0 40px rgb(2, 162, 255); 
+    font-family: 'FuenteMaquina', sans-serif; 
+
+}
+
+.message-container {
+    padding: 20px;
+}
+
+.message-container textarea {
+    width: 557px; 
+    height: 242px; 
+    padding: 20px;
+    resize: none; 
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 2px solid #4568DC; 
+    border-radius: 8px;
+    transition: border-color 0.3s ease-in-out;
+    color: #1f1f1f;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.cifrar-btn,
+.descifrar-btn {
+    background-color: rgba(77, 182, 182, 0);
+    color: #fff;
+    border: none;
+    padding: 10px 55px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-left: 33px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out, transform 0.6s ease-in-out;
+    font-family: 'FuenteMaquina', sans-serif; 
+}
+
+.cifrar-btn:hover,
+.descifrar-btn:hover {
+    transform: scale(0.5);
+}
+
+div img {
+    position: absolute;
+    top: 502px;
+    left: 450px;
+    width: 33%;
+    z-index: -1; 
+}
+
+.resultado {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.resultado-content textarea  {
+    width: 530px; 
+    height: 200px; 
+    padding: 20px;
+    resize: none; 
+}
+
+.resultado-content {
+    animation: fadeIn 0.5s;
+    background-color: #97e0e0;
+    color: #000000;
+    margin: 8% auto;
+    padding: 20px;
+    border: 2px solid #bbffd0;
+    border-radius: 25px;
+    width: 39%;
+    height: 53%;
+
+}
+
+#miresultado button {
+    background-color: #bbffd0; 
+    color: #4568DC; 
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#miresultado button:hover {
+    background-color: #a2e0c7;
+}
+

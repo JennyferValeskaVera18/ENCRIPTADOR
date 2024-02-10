@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Mensajes Secretos</title>
+    <link rel="stylesheet" href="assets/css/encriptar.css">
+</head>
+<body>
+    <video src="assets/videos/videoDeFondo.mp4" autoplay="true" muted="true" loop="true" poster="assets/img/imgfondoDeVideo.png"></video>
+    <header>
+        <h1>ENCRIPTA TU MENSAJE</h1>
+    </header>
+    <div class="container">
+        <div class="message-container">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Ingresa tu mensaje secreto"></textarea>
+
+            <label for="clave">Clave:</label>
+            <input type="number" id="clave" placeholder="Ingresa la clave">
+        </div>
+    </div>
+
+    <div class="buttons-container">
+        <button class="cifrar-btn" onclick="cifrar()">CIFRAR</button>
+        <button class="descifrar-btn" onclick="descifrar()">DESCIFRAR</button>
+    </div>    
+    <div>
+        <img src="./assets/img/botonesConsola.png" alt="Botones de consola">
+    </div>
+    <div id="miresultado" class="resultado">
+        <div class="resultado-content">    
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <p>¡Mensaje cifrado/descifrado con éxito!</p>
+            <textarea id="miResultado" readonly></textarea></br>
+            <button onclick="copiarModalResultado()">Copiar resultado</button>
+        </div>
+    </div>
+    <script src="assets/js/encriptar.js"></script>
+</body>
+</html>

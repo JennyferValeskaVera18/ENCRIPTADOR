@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'FuentePixel';
+    src: url('../fonts/fuentePixel.TTF') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.freepik.com/vector-premium/fondo-pixelado_634779-89.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.boton-ancla {
+    display: inline-block;
+    padding: 22px 27px;
+    font-size: 76px;
+    font-family: 'FuentePixel'; 
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(140, 255, 248);
+    color: rgb(1, 217, 190);
+    border-radius: 70px;
+    cursor: pointer;
+    /* Sombra del texto */
+    text-shadow: 4px 5px 0 rgb(12, 35, 80);
+    margin-top: -181px; 
+    margin-left: 16px; 
+}
+
+.boton-ancla:hover {
+    background-color: rgb(99, 214, 209);
+}
+
+footer {
+    background-color: rgb(69, 42, 31); 
+    color: #fff;
+    padding: 1px;
+    text-align: center;
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
+}
